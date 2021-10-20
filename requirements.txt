@@ -1,4 +1,0 @@
-cobra
-masspy
-escher
-equilibrator_api
