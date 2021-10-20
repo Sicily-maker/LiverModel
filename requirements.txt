@@ -1,0 +1,6 @@
+cobra
+masspy
+escher
+equilibrator_api
+cplex
+openpyxl
