@@ -204,8 +204,9 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     given by column_index while ensuring it remains a feasible vector and
     linearly independent of all other columns.
     """
+    print(column_index, N,solver_name, cores, timelimit, verbose)
     solver = cobra.util.solvers
-    cobra.solvers.solver_dict[solver_name]
+    cobra.util.solvers[solver_name]
     n = N.shape[0]
     fluxes = original_fluxes.copy()
 
@@ -487,10 +488,13 @@ def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
             # Call calculate_minspan_column. Mapper is used with the helper
             # function because the multiprocessing map function only takes a
             # single iterable.
+            # model_pickle, original_fluxes, column_index, N,solver_name,
+            #                  cores, timelimit, verbose
             flux_vectors = list(mapper(calculate_minspan_column_helper,
                 zip(repeat(model_pickle), repeat(fluxes), column_indices,
-                    repeat(N), repeat(use_cores), repeat(use_timelimit),
-                    repeat(verbose), repeat(solver_name))))
+                    repeat(N), repeat(solver_name),repeat(use_cores),
+                     repeat(use_timelimit),
+                    repeat(verbose))))
             # out of all the flux vectors which were minimized, pick the one
             # which improved the most
             previous_nnz = [nnz(fluxes[:, a]) for a in column_indices]
