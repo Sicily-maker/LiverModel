@@ -20,6 +20,9 @@ from sympy import lcm
 
 import cobra  # https://github.com/opencobra/cobrapy
 from cobra.util import array
+from cobra.util import *
+cobra_config = cobra.Configuration()
+cobra_config.solver="gurobi"
 # define constants
 
 default_max_error = 1e-6        # maximum allowed value in S * v
@@ -193,6 +196,7 @@ def prepare_model(model):
 
 
 def calculate_minspan_column_helper(args):
+    print(args)
     return calculate_minspan_column(*args)
 
 
@@ -204,7 +208,12 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     given by column_index while ensuring it remains a feasible vector and
     linearly independent of all other columns.
     """
-    solver = cobra.solvers.solver_dict[solver_name]
+    # solver = cobra.util.solvers[solver_name]
+    # cobra.solvers.solver_dict[solver_name]
+        # if solver_name == "auto":
+        # if "gurobi" in cobra.util.solver.Dict:
+        #     solver_name = "gurobi"
+        
     n = N.shape[0]
     fluxes = original_fluxes.copy()
 
@@ -260,14 +269,15 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     d = model.problem.Constraint(fi_plus + fi_minus, lb=1, name="or_constraint")
     model.add_cons_vars([d])
        # seed the variables with the old solution, and set extra arguments
+
     if solver_name.startswith("gurobi"):
-        for i, variable in enumerate(lp.getVars()):
+        for i, variable in enumerate(model.solver.variables):
             if i < n:
                 variable.Start = float(oldPath[i])
             elif i < 2 * n:
                 variable.Start = float(binOldPath[i - n])
-        solver.set_parameter(lp, "Method", 2)
-        solver.set_parameter(lp, "Presolve", 2)
+        solver.set_parameter(model.solver, "Method", 2)
+        solver.set_parameter(model.solver, "Presolve", 2)
     elif solver_name.startswith("cplex"):
         # only seed cplex with the integer values
         # effort_level.solve_fixed tells cplex to solve the problem with these
@@ -379,16 +389,9 @@ def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
         Whether solver should run verbose
     """
     # identify a solver if necessary
-    # identify a solver if necessary
-    if solver_name == "auto":
-        if "gurobi" in cobra.solvers.solver_dict:
-            solver_name = "gurobi"
-        elif "cplex" in cobra.solvers.solver_dict:
-            solver_name = "cplex"
-        else:
-            solver_name = cobra.solvers.solver_dict.keys()[0]
-        if verbose:
-            print("using solver", solver_name)
+    if solver_name=="auto":
+        solver_name="gurobi"
+    cobra.util.solver.choose_solver(model,solver=solver_name)
     # copy the model, extract S, add indicators, and store indicator-model
     model = model.copy()
 
@@ -488,8 +491,8 @@ def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
             # single iterable.
             flux_vectors = list(mapper(calculate_minspan_column_helper,
                 zip(repeat(model_pickle), repeat(fluxes), column_indices,
-                    repeat(N), repeat(use_cores), repeat(use_timelimit),
-                    repeat(verbose), repeat(solver_name))))
+                    repeat(N), repeat(solver_name), repeat(use_cores), repeat(use_timelimit),
+                    repeat(verbose))))
             # out of all the flux vectors which were minimized, pick the one
             # which improved the most
             previous_nnz = [nnz(fluxes[:, a]) for a in column_indices]
