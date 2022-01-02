@@ -204,7 +204,8 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     given by column_index while ensuring it remains a feasible vector and
     linearly independent of all other columns.
     """
-    solver = cobra.solvers.solver_dict[solver_name]
+    solver = cobra.util.solvers
+    cobra.solvers.solver_dict[solver_name]
     n = N.shape[0]
     fluxes = original_fluxes.copy()
 
