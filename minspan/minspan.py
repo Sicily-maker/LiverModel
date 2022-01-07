@@ -196,7 +196,7 @@ def calculate_minspan_column_helper(args):
     return calculate_minspan_column(*args)
 
 
-def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solver_name,
+def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,
                              cores, timelimit, verbose):
     """calculate a single minspan column
 
@@ -204,8 +204,6 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     given by column_index while ensuring it remains a feasible vector and
     linearly independent of all other columns.
     """
-
-    solver = cobra.util.solvers[solver_name]
     n = N.shape[0]
     fluxes = original_fluxes.copy()
 
@@ -239,12 +237,6 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     # This will be done by specifying that abs(N2 * fluxes) > 1
     fi_plus = model.problem.Variable(name="fi_plus", type='binary')  # boolean for N2 * fluxes > eps
     fi_minus = model.problem.Variable(name="fi_minus", type='binary')  # boolean for N2 * fluxes < -eps
-    # solver.set_objective(model, direction="min")
-    # create the solver object
-    lp = cobra.util.solver.set_objective(model
-    ,value="minimize"
-    # , objective_sense="minimize"
-    )
     model.add_cons_vars([fi_plus, fi_minus])
     
     # N2 * fluxes > eps | -N2 * fluxes > eps
@@ -266,26 +258,6 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
 
     d = model.problem.Constraint(fi_plus + fi_minus, lb=1, name="or_constraint")
     model.add_cons_vars([d])
-       # seed the variables with the old solution, and set extra arguments
-    if solver_name.startswith("gurobi"):
-        for i, variable in enumerate(lp.getVars()):
-            if i < n:
-                variable.Start = float(oldPath[i])
-            elif i < 2 * n:
-                variable.Start = float(binOldPath[i - n])
-        solver.set_parameter(lp, "Method", 2)
-        solver.set_parameter(lp, "Presolve", 2)
-    elif solver_name.startswith("cplex"):
-        # only seed cplex with the integer values
-        # effort_level.solve_fixed tells cplex to solve the problem with these
-        # values set, and then use that as an initial point for the entire
-        # problem
-        lp.MIP_starts.add((range(n, 2 * n), binOldPath.tolist()),
-            lp.MIP_starts.effort_level.repair)
-    # solve the model with the new parameters
-    status = solver.solve_problem(lp, verbose=verbose, threads=cores,
-        time_limit=timelimit, MIP_gap=0.001, MIP_gap_abs=0.999)
-    solution = solver.format_solution(lp, problem)
 
 
     # seed the variables with the old solution, and set extra arguments
@@ -350,7 +322,7 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
 
 
 def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
-    mapper=map, timelimit=30, verbose=True, solver_name="auto",
+    mapper=map, timelimit=30, verbose=True,
     first_round_cores=None, first_round_timelimit=2):
     """run minspan
 
@@ -386,16 +358,6 @@ def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
         Whether solver should run verbose
     """
     # identify a solver if necessary
-    # identify a solver if necessary
-    if solver_name == "auto":
-        if "gurobi" in cobra.solvers.solver_dict:
-            solver_name = "gurobi"
-        elif "cplex" in cobra.solvers.solver_dict:
-            solver_name = "cplex"
-        else:
-            solver_name = cobra.solvers.solver_dict.keys()[0]
-        if verbose:
-            print("using solver", solver_name)
     # copy the model, extract S, add indicators, and store indicator-model
     model = model.copy()
 
@@ -493,12 +455,9 @@ def minspan(model, starting_fluxes=None, coverage=10, cores=4, processes="auto",
             # Call calculate_minspan_column. Mapper is used with the helper
             # function because the multiprocessing map function only takes a
             # single iterable.
-            # model_pickle, original_fluxes, column_index, N,solver_name,
-            #                  cores, timelimit, verbose
             flux_vectors = list(mapper(calculate_minspan_column_helper,
                 zip(repeat(model_pickle), repeat(fluxes), column_indices,
-                    repeat(N), repeat(solver_name),repeat(use_cores),
-                     repeat(use_timelimit),
+                    repeat(N), repeat(use_cores), repeat(use_timelimit),
                     repeat(verbose))))
             # out of all the flux vectors which were minimized, pick the one
             # which improved the most
