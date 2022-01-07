@@ -242,7 +242,7 @@ def calculate_minspan_column(model_pickle, original_fluxes, column_index, N,solv
     # solver.set_objective(model, direction="min")
     # create the solver object
     lp = cobra.util.solver.set_objective(model
-    ,value=
+    ,value="minimize"
     # , objective_sense="minimize"
     )
     model.add_cons_vars([fi_plus, fi_minus])
