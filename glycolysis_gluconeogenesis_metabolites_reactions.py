@@ -45,8 +45,9 @@ import csv
 
 
 #load Recon3D
-model_dir = os.path.abspath("../massters_model")
+model_dir = os.path.abspath("models")
 data_dir = os.path.abspath("data")
+model_dir
 R3D=load_json_cobra_model(filename=os.path.join(model_dir,"Recon3D.json"))
 
 
@@ -136,7 +137,7 @@ metabolite_list = [
                     'pep_c',
 #PYK
                     'pyr_c',
-#PYRt2m #what should we do about h_i
+#PYRt2m 
                     'h_m',
                     'pyr_m',
 # #PCm
@@ -196,7 +197,7 @@ met_df
 # In[9]:
 
 
-csv_met = os.path.join(data_dir,"met_df")
+csv_met = os.path.join(data_dir,"glycolysis_gluconeogenesis_met_df.csv")
 met_df.to_csv(csv_met)
 
 
@@ -219,7 +220,7 @@ reaction_list = ['HEX1',
                 'PGK',
                 'PGM',
                 'ENO',
-                'PEPtm',
+                # 'PEPtm',
                 'PEPCKm',
                 'PYK',
                 'PCm',
@@ -273,7 +274,7 @@ rxn_df
 # In[16]:
 
 
-csv_rxn = os.path.join(data_dir,"reaction_df")
+csv_rxn = os.path.join(data_dir,"glycolysis_gluconeogenesis_reaction_df.csv")
 rxn_df.to_csv(csv_rxn)
 
 
@@ -282,3 +283,5 @@ rxn_df.to_csv(csv_rxn)
 
 
 
+
+# %%
