@@ -1,75 +1,32 @@
 id,name,charge,formula,compartment
-h_i,H+,0,H,i
-h_m,H+,0,H,m
-nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
-nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
-q10_m,Ubiquinone-10,0,C59H90O4,m
-q10h2_m,Ubiquinol-10,0,C59H92O4,m
-fad_m,Flavin adenine dinucleotide oxidized,-2,C27H31N9O15P2,m
-fadh2_m,Flavin adenine dinucleotide reduced,-2,C27H33N9O15P2,m
-ficytC_m,Ferricytochrome c,3,C42H54FeN8O6S2,m
-focytC_m,Ferrocytochrome C,2,C42H54FeN8O6S2,m
-h2o_m,H2O H2O,0,H2O,m
-o2_m,O2 O2,0,O2,m
-adp_m,ADP C10H12N5O10P2,-3,C10H12N5O10P2,m
-atp_m,ATP C10H12N5O13P3,-4,C10H12N5O13P3,m
-pi_m,Phosphate,0,HO4P,m
-accoa_m,Acetyl-CoA,-4,C23H34N7O17P3S,m
-cit_m,Citrate,-3,C6H5O7,m
-coa_m,Coenzyme A,-4,C21H32N7O16P3S,m
-oaa_m,Oxaloacetate,-2,C4H2O5,m
-icit_m,Isocitrate,-3,C6H5O7,m
-akg_m,2-Oxoglutarate,-2,C5H4O5,m
-co2_m,CO2 CO2,0,CO2,m
-succoa_m,Succinyl-CoA,-5,C25H35N7O19P3S,m
-succ_m,Succinate,-2,C4H4O4,m
-fum_m,Fumarate,-2,C4H2O4,m
-mal__L_m,L-Malate,-2,C4H4O5,m
-pyr_m,Pyruvate,-1,C3H3O3,m
-hco3_m,Bicarbonate,-1,CHO3,m
-gdp_m,GDP C10H12N5O11P2,-3,C10H12N5O11P2,m
-gtp_m,GTP C10H12N5O14P3,-4,C10H12N5O14P3,m
-pep_m,Phosphoenolpyruvate,-3,C3H2O6P,m
-f6p_c,D-Fructose 6-phosphate,-2,C6H11O9P,c
-fdp_c,"D-Fructose 1,6-bisphosphate",-4,C6H10O12P2,c
-h2o_c,H2O H2O,0,H2O,c
-pi_c,Phosphate,0,HO4P,c
-mal__L_c,L-Malate,-2,C4H4O5,c
-h_c,H+,0,H,c
-nad_c,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,c
-nadh_c,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,c
-oaa_c,Oxaloacetate,-2,C4H2O5,c
-co2_c,CO2 CO2,0,CO2,c
-gdp_c,GDP C10H12N5O11P2,-3,C10H12N5O11P2,c
-gtp_c,GTP C10H12N5O14P3,-4,C10H12N5O14P3,c
-pep_c,Phosphoenolpyruvate,-3,C3H2O6P,c
+glc__D_c,D-Glucose,0,C6H12O6,c
+g6p_c,D-Glucose 6-phosphate,-2,C6H11O9P,c
 adp_c,ADP C10H12N5O10P2,-3,C10H12N5O10P2,c
 atp_c,ATP C10H12N5O13P3,-4,C10H12N5O13P3,c
-akg_c,2-Oxoglutarate,-2,C5H4O5,c
-asp__L_c,L-Aspartate,-1,C4H6NO4,c
-glu__L_c,L-Glutamate,-1,C5H8NO4,c
-asp__L_m,L-Aspartate,-1,C4H6NO4,m
-glu__L_m,L-Glutamate,-1,C5H8NO4,m
-pyr_c,Pyruvate,-1,C3H3O3,c
-o2_c,O2 O2,0,O2,c
-g6p_c,D-Glucose 6-phosphate,-2,C6H11O9P,c
-glc__D_c,D-Glucose,0,C6H12O6,c
+h_c,H+,0,H,c
+f6p_c,D-Fructose 6-phosphate,-2,C6H11O9P,c
+h2o_c,H2O H2O,0,H2O,c
+pi_c,Phosphate,0,HO4P,c
+fdp_c,"D-Fructose 1,6-bisphosphate",-4,C6H10O12P2,c
 dhap_c,Dihydroxyacetone phosphate,-2,C3H5O6P,c
 g3p_c,Glyceraldehyde 3-phosphate,-2,C3H5O6P,c
-13dpg_c,3-Phospho-D-glyceroyl phosphate,-4,C3H4O10P2,c
-3pg_c,3-Phospho-D-glycerate,-3,C3H4O7P,c
-2pg_c,D-Glycerate 2-phosphate,-3,C3H4O7P,c
+nad_c,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,c
+nadh_c,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,c
+_13dpg_c,3-Phospho-D-glyceroyl phosphate,-4,C3H4O10P2,c
+_3pg_c,3-Phospho-D-glycerate,-3,C3H4O7P,c
+_2pg_c,D-Glycerate 2-phosphate,-3,C3H4O7P,c
+pep_c,Phosphoenolpyruvate,-3,C3H2O6P,c
+pyr_c,Pyruvate,-1,C3H3O3,c
+h_m,H+,0,H,m
+pyr_m,Pyruvate,-1,C3H3O3,m
+hco3_m,Bicarbonate,-1,CHO3,m
+pi_m,Phosphate,0,HO4P,m
+atp_m,ATP C10H12N5O13P3,-4,C10H12N5O13P3,m
+adp_m,ADP C10H12N5O10P2,-3,C10H12N5O10P2,m
+oaa_m,Oxaloacetate,-2,C4H2O5,m
+gtp_m,GTP C10H12N5O14P3,-4,C10H12N5O14P3,m
+co2_m,CO2 CO2,0,CO2,m
+gdp_m,GDP C10H12N5O11P2,-3,C10H12N5O11P2,m
+pep_m,Phosphoenolpyruvate,-3,C3H2O6P,m
 lac__L_c,L-Lactate,-1,C3H5O3,c
-6pgl_c,"6-phospho-D-glucono-1,5-lactone",-2,C6H9O9P,c
-nadp_c,Nicotinamide adenine dinucleotide phosphate,-3,C21H25N7O17P3,c
-nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced,-4,C21H26N7O17P3,c
-6pgc_c,6-Phospho-D-gluconate,-3,C6H10O10P,c
-ru5p__D_c,D-Ribulose 5-phosphate,-2,C5H9O8P,c
-r5p_c,Alpha-D-Ribose 5-phosphate,-2,C5H9O8P,c
-xu5p__D_c,D-Xylulose 5-phosphate,-2,C5H9O8P,c
-s7p_c,Sedoheptulose 7-phosphate,-2,C7H13O10P,c
-e4p_c,D-Erythrose 4-phosphate,-2,C4H7O7P,c
-h2o2_c,Hydrogen peroxide,0,H2O2,c
-o2s_c,Superoxide anion,-1,O2,c
-gthox_c,Oxidized glutathione,-2,C20H30N6O12S2,c
-gthrd_c,Reduced glutathione,-1,C10H16N3O6S,c
+amp_c,AMP C10H12N5O7P,-2,C10H12N5O7P,c
