@@ -477,7 +477,7 @@
 "h2o_c":-1,
 "pi_c":1
 },
-"lower_bound":0.0,
+"lower_bound":0,
 "upper_bound":1000.0,
 "gene_reaction_rule":""
 },
