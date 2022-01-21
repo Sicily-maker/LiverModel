@@ -12,9 +12,9 @@ dhap_c,Dihydroxyacetone phosphate,-2,C3H5O6P,c
 g3p_c,Glyceraldehyde 3-phosphate,-2,C3H5O6P,c
 nad_c,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,c
 nadh_c,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,c
-_13dpg_c,3-Phospho-D-glyceroyl phosphate,-4,C3H4O10P2,c
-_3pg_c,3-Phospho-D-glycerate,-3,C3H4O7P,c
-_2pg_c,D-Glycerate 2-phosphate,-3,C3H4O7P,c
+13dpg_c,3-Phospho-D-glyceroyl phosphate,-4,C3H4O10P2,c
+3pg_c,3-Phospho-D-glycerate,-3,C3H4O7P,c
+2pg_c,D-Glycerate 2-phosphate,-3,C3H4O7P,c
 pep_c,Phosphoenolpyruvate,-3,C3H2O6P,c
 pyr_c,Pyruvate,-1,C3H3O3,c
 h_m,H+,0,H,m
