@@ -444,7 +444,7 @@
 "objective_coefficient":1.0
 },
 {
-"id":"DM_nadh",
+"id":"NADHM",
 "name":"",
 "metabolites":{
 "h_c":1,
