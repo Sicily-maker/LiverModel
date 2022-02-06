@@ -219,13 +219,17 @@
 },
 {
 "id":"o2_c",
-"name":"",
-"compartment":""
+"name":"O2 O2",
+"compartment":"c",
+"charge":0,
+"formula":"O2"
 },
 {
 "id":"co2_c",
-"name":"",
-"compartment":""
+"name":"CO2 CO2",
+"compartment":"c",
+"charge":0,
+"formula":"CO2"
 }
 ],
 "reactions":[
