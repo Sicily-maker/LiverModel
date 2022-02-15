@@ -976,8 +976,7 @@
 },
 "lower_bound":0.0,
 "upper_bound":1000.0,
-"gene_reaction_rule":"",
-"objective_coefficient":1.0
+"gene_reaction_rule":""
 },
 {
 "id":"HEX1",
@@ -1344,7 +1343,8 @@
 },
 "lower_bound":-1,
 "upper_bound":1000.0,
-"gene_reaction_rule":""
+"gene_reaction_rule":"",
+"objective_coefficient":1.0
 },
 {
 "id":"EX_h2o_c",
