@@ -1,5 +1,5 @@
 id,name,charge,formula,compartment
-h_i,H+,0,H,i
+h_i,H+,1,H,i
 h_m,H+,1,H,m
 nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
 nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
