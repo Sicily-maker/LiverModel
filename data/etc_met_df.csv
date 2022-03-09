@@ -1,0 +1,50 @@
+id,name,charge,formula,compartment
+h_i,H+,0,H,i
+h_m,H+,0,H,m
+nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
+nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
+q10_m,Ubiquinone-10,0,C59H90O4,m
+q10h2_m,Ubiquinol-10,0,C59H92O4,m
+fad_m,Flavin adenine dinucleotide oxidized,-2,C27H31N9O15P2,m
+fadh2_m,Flavin adenine dinucleotide reduced,-2,C27H33N9O15P2,m
+q10_m,Ubiquinone-10,0,C59H90O4,m
+q10h2_m,Ubiquinol-10,0,C59H92O4,m
+ficytC_m,Ferricytochrome c,3,C42H54FeN8O6S2,m
+focytC_m,Ferrocytochrome C,2,C42H54FeN8O6S2,m
+h_i,H+,0,H,i
+h_m,H+,0,H,m
+q10_m,Ubiquinone-10,0,C59H90O4,m
+q10h2_m,Ubiquinol-10,0,C59H92O4,m
+ficytC_m,Ferricytochrome c,3,C42H54FeN8O6S2,m
+focytC_m,Ferrocytochrome C,2,C42H54FeN8O6S2,m
+h2o_m,H2O H2O,0,H2O,m
+h_i,H+,0,H,i
+h_m,H+,0,H,m
+o2_m,O2 O2,0,O2,m
+mal__L_c,L-Malate,-2,C4H4O5,c
+mal__L_m,L-Malate,-2,C4H4O5,m
+pi_c,Phosphate,0,HO4P,c
+pi_m,Phosphate,0,HO4P,m
+h_c,H+,0,H,c
+mal__L_c,L-Malate,-2,C4H4O5,c
+nad_c,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,c
+nadh_c,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,c
+oaa_c,Oxaloacetate,-2,C4H2O5,c
+akg_c,2-Oxoglutarate,-2,C5H4O5,c
+akg_m,2-Oxoglutarate,-2,C5H4O5,m
+mal__L_c,L-Malate,-2,C4H4O5,c
+mal__L_m,L-Malate,-2,C4H4O5,m
+akg_c,2-Oxoglutarate,-2,C5H4O5,c
+asp__L_c,L-Aspartate,-1,C4H6NO4,c
+glu__L_c,L-Glutamate,-1,C5H8NO4,c
+oaa_c,Oxaloacetate,-2,C4H2O5,c
+akg_m,2-Oxoglutarate,-2,C5H4O5,m
+asp__L_m,L-Aspartate,-1,C4H6NO4,m
+glu__L_m,L-Glutamate,-1,C5H8NO4,m
+oaa_m,Oxaloacetate,-2,C4H2O5,m
+asp__L_c,L-Aspartate,-1,C4H6NO4,c
+asp__L_m,L-Aspartate,-1,C4H6NO4,m
+glu__L_c,L-Glutamate,-1,C5H8NO4,c
+glu__L_m,L-Glutamate,-1,C5H8NO4,m
+h_i,H+,0,H,i
+h_m,H+,0,H,m
