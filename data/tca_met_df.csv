@@ -5,40 +5,18 @@ coa_m,Coenzyme A,-4,C21H32N7O16P3S,m
 h2o_m,H2O H2O,0,H2O,m
 h_m,H+,0,H,m
 oaa_m,Oxaloacetate,-2,C4H2O5,m
-cit_m,Citrate,-3,C6H5O7,m
 icit_m,Isocitrate,-3,C6H5O7,m
 akg_m,2-Oxoglutarate,-2,C5H4O5,m
 co2_m,CO2 CO2,0,CO2,m
-icit_m,Isocitrate,-3,C6H5O7,m
-nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
-nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
-akg_m,2-Oxoglutarate,-2,C5H4O5,m
-co2_m,CO2 CO2,0,CO2,m
-coa_m,Coenzyme A,-4,C21H32N7O16P3S,m
 nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
 nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
 succoa_m,Succinyl-CoA,-5,C25H35N7O19P3S,m
 adp_m,ADP C10H12N5O10P2,-3,C10H12N5O10P2,m
 atp_m,ATP C10H12N5O13P3,-4,C10H12N5O13P3,m
-coa_m,Coenzyme A,-4,C21H32N7O16P3S,m
 pi_m,Phosphate,0,HO4P,m
 succ_m,Succinate,-2,C4H4O4,m
-succoa_m,Succinyl-CoA,-5,C25H35N7O19P3S,m
 fad_m,Flavin adenine dinucleotide oxidized,-2,C27H31N9O15P2,m
 fadh2_m,Flavin adenine dinucleotide reduced,-2,C27H33N9O15P2,m
 fum_m,Fumarate,-2,C4H2O4,m
-succ_m,Succinate,-2,C4H4O4,m
-fum_m,Fumarate,-2,C4H2O4,m
-h2o_m,H2O H2O,0,H2O,m
 mal__L_m,L-Malate,-2,C4H4O5,m
-h_m,H+,0,H,m
-mal__L_m,L-Malate,-2,C4H4O5,m
-nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
-nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
-oaa_m,Oxaloacetate,-2,C4H2O5,m
-accoa_m,Acetyl-CoA,-4,C23H34N7O17P3S,m
-co2_m,CO2 CO2,0,CO2,m
-coa_m,Coenzyme A,-4,C21H32N7O16P3S,m
-nad_m,Nicotinamide adenine dinucleotide,-1,C21H26N7O14P2,m
-nadh_m,Nicotinamide adenine dinucleotide - reduced,-2,C21H27N7O14P2,m
 pyr_m,Pyruvate,-1,C3H3O3,m
