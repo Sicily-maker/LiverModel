@@ -29,4 +29,8 @@ hco3_m,Bicarbonate,-1,CHO3,m
 pi_m,Phosphate,0,HO4P,m
 pyr_m,Pyruvate,-1,C3H3O3,m
 lac__L_c,L-Lactate,-1,C3H5O3,c
+co2_c,CO2 CO2,0,CO2,c
+o2_c,O2 O2,0,O2,c
+o2_m,O2 O2,0,O2,m
+h2o_m,H2O H2O,0,H2O,m
 amp_c,AMP C10H12N5O7P,-2,C10H12N5O7P,c
