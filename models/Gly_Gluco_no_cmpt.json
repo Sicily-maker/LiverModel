@@ -1,0 +1,693 @@
+{
+    "boundary_conditions": {
+        "adp_b": 0.00199495195,
+        "amp_b": 0.000365,
+        "co2_b": 0.657953,
+        "gdp_b": 0.657953,
+        "glc__D_b": 0.01048280703,
+        "gtp_b": 1.519864,
+        "h2o_b": 1,
+        "h_b": 1,
+        "hco3_b": 0.001827,
+        "lac__L_b": 0.00326183772,
+        "pi_b": 0.0064
+    },
+    "compartments": {
+        "cytosol": ""
+    },
+    "custom_parameters": {},
+    "custom_rates": {},
+    "enzyme_modules": [],
+    "genes": [],
+    "id": "Core_Model",
+    "metabolites": [
+        {
+            "_initial_condition": 0.031498775649024056,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C10H12N5O7P",
+            "id": "amp",
+            "name": "AMP C10H12N5O7P"
+        },
+        {
+            "_initial_condition": 0.010589383009674254,
+            "charge": -1,
+            "compartment": "cytosol",
+            "formula": "C3H5O3",
+            "id": "lac__L",
+            "name": "L-Lactate"
+        },
+        {
+            "_initial_condition": 0.0018272021532930594,
+            "charge": -1,
+            "compartment": "cytosol",
+            "formula": "CHO3",
+            "id": "hco3",
+            "name": "Bicarbonate"
+        },
+        {
+            "_initial_condition": 0.000147853949958144,
+            "charge": -1,
+            "compartment": "cytosol",
+            "formula": "C3H3O3",
+            "id": "pyr",
+            "name": "Pyruvate"
+        },
+        {
+            "_initial_condition": 5.9858482792002105e-06,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C4H2O5",
+            "id": "oaa",
+            "name": "Oxaloacetate"
+        },
+        {
+            "_initial_condition": 1.51986425181813,
+            "charge": -4,
+            "compartment": "cytosol",
+            "formula": "C10H12N5O14P3",
+            "id": "gtp",
+            "name": "GTP C10H12N5O14P3"
+        },
+        {
+            "_initial_condition": 0.6579534973625145,
+            "charge": -3,
+            "compartment": "cytosol",
+            "formula": "C10H12N5O11P2",
+            "id": "gdp",
+            "name": "GDP C10H12N5O11P2"
+        },
+        {
+            "_initial_condition": 0.6579534973625146,
+            "charge": 0,
+            "compartment": "cytosol",
+            "formula": "CO2",
+            "id": "co2",
+            "name": "CO2 CO2"
+        },
+        {
+            "_initial_condition": 0.00018755211659789042,
+            "charge": -3,
+            "compartment": "cytosol",
+            "formula": "C3H2O6P",
+            "id": "pep",
+            "name": "Phosphoenolpyruvate"
+        },
+        {
+            "_initial_condition": 3.9807551761941035e-05,
+            "charge": -3,
+            "compartment": "cytosol",
+            "formula": "C3H4O7P",
+            "id": "_2pg",
+            "name": "D-Glycerate 2-phosphate"
+        },
+        {
+            "_initial_condition": 0.0005648706299414619,
+            "charge": -3,
+            "compartment": "cytosol",
+            "formula": "C3H4O7P",
+            "id": "_3pg",
+            "name": "3-Phospho-D-glycerate"
+        },
+        {
+            "_initial_condition": 9.999205395980821e-06,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C21H27N7O14P2",
+            "id": "nadh",
+            "name": "Nicotinamide adenine dinucleotide - reduced"
+        },
+        {
+            "_initial_condition": 0.0008461749556303072,
+            "charge": -1,
+            "compartment": "cytosol",
+            "formula": "C21H26N7O14P2",
+            "id": "nad",
+            "name": "Nicotinamide adenine dinucleotide"
+        },
+        {
+            "_initial_condition": 1.7428015625192753e-06,
+            "charge": -4,
+            "compartment": "cytosol",
+            "formula": "C3H4O10P2",
+            "id": "_13dpg",
+            "name": "3-Phospho-D-glyceroyl phosphate"
+        },
+        {
+            "_initial_condition": 7.890944618248939e-05,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C3H5O6P",
+            "id": "g3p",
+            "name": "Glyceraldehyde 3-phosphate"
+        },
+        {
+            "_initial_condition": 0.0008987562083053876,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C3H5O6P",
+            "id": "dhap",
+            "name": "Dihydroxyacetone phosphate"
+        },
+        {
+            "_initial_condition": 0.0064,
+            "charge": -2,
+            "compartment": "cytosol",
+            "fixed": true,
+            "formula": "HO4P",
+            "id": "pi",
+            "name": "Phosphate"
+        },
+        {
+            "_initial_condition": 1,
+            "charge": 0,
+            "compartment": "cytosol",
+            "fixed": true,
+            "formula": "H2O",
+            "id": "h2o",
+            "name": "H2O H2O"
+        },
+        {
+            "_initial_condition": 2.8789688461388572e-06,
+            "charge": -4,
+            "compartment": "cytosol",
+            "formula": "C6H10O12P2",
+            "id": "fdp",
+            "name": "D-Fructose 1,6-bisphosphate"
+        },
+        {
+            "_initial_condition": 0.0001288769423978224,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C6H11O9P",
+            "id": "f6p",
+            "name": "D-Fructose 6-phosphate"
+        },
+        {
+            "_initial_condition": 1,
+            "charge": 1,
+            "compartment": "cytosol",
+            "fixed": true,
+            "formula": "H",
+            "id": "h",
+            "name": "H+"
+        },
+        {
+            "_initial_condition": 0.01048280703,
+            "charge": 0,
+            "compartment": "cytosol",
+            "formula": "C6H12O6",
+            "id": "glc__D",
+            "name": "D-Glucose"
+        },
+        {
+            "_initial_condition": 0.00013811059347650036,
+            "charge": -2,
+            "compartment": "cytosol",
+            "formula": "C6H11O9P",
+            "id": "g6p",
+            "name": "D-Glucose 6-phosphate"
+        },
+        {
+            "_initial_condition": 0.004615747596857805,
+            "charge": -4,
+            "compartment": "cytosol",
+            "formula": "C10H12N5O13P3",
+            "id": "atp",
+            "name": "ATP C10H12N5O13P3"
+        },
+        {
+            "_initial_condition": 0.0020430989547945556,
+            "charge": -3,
+            "compartment": "cytosol",
+            "formula": "C10H12N5O10P2",
+            "id": "adp",
+            "name": "ADP C10H12N5O10P2"
+        }
+    ],
+    "reactions": [
+        {
+            "_equilibrium_constant": 4959.419292148073,
+            "_forward_rate_constant": 100000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "HEX1",
+            "metabolites": {
+                "adp": 1.0,
+                "atp": -1.0,
+                "g6p": 1.0,
+                "glc__D": -1.0,
+                "h": 1.0
+            },
+            "name": "Hexokinase (D-glucose:ATP)",
+            "steady_state_flux": 0.0
+        },
+        {
+            "_equilibrium_constant": 0.34328414899804255,
+            "_forward_rate_constant": 1346.9609907462795,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PGI",
+            "metabolites": {
+                "f6p": 1.0,
+                "g6p": -1.0
+            },
+            "name": "Glucose-6-phosphate isomerase",
+            "steady_state_flux": -0.31965125
+        },
+        {
+            "_equilibrium_constant": 115004.76795942851,
+            "_forward_rate_constant": 111030.0470025914,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "FBP",
+            "metabolites": {
+                "f6p": 1.0,
+                "fdp": -1.0,
+                "h2o": -1.0,
+                "pi": 1.0
+            },
+            "name": "Fructose-bisphosphatase",
+            "steady_state_flux": 0.31965125
+        },
+        {
+            "_equilibrium_constant": 1454.9063091036724,
+            "_forward_rate_constant": 100000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PFK",
+            "metabolites": {
+                "adp": 1.0,
+                "atp": -1.0,
+                "f6p": -1.0,
+                "fdp": 1.0,
+                "h": 1.0
+            },
+            "name": "Phosphofructokinase",
+            "steady_state_flux": 0.0
+        },
+        {
+            "_equilibrium_constant": 0.009062321209720555,
+            "_forward_rate_constant": 64616.74014679194,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "FBA",
+            "metabolites": {
+                "dhap": 1.0,
+                "fdp": -1.0,
+                "g3p": 1.0
+            },
+            "name": "Fructose-bisphosphate aldolase",
+            "steady_state_flux": -0.31965125
+        },
+        {
+            "_equilibrium_constant": 0.032299262799527,
+            "_forward_rate_constant": 206.9855875292629,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "TPI",
+            "metabolites": {
+                "dhap": -1.0,
+                "g3p": 1.0
+            },
+            "name": "Triose-phosphate isomerase",
+            "steady_state_flux": -0.31965125
+        },
+        {
+            "_equilibrium_constant": 9.601294378584456e-05,
+            "_forward_rate_constant": 3530583.433807521,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "GAPD",
+            "metabolites": {
+                "_13dpg": 1.0,
+                "g3p": -1.0,
+                "h": 1.0,
+                "nad": -1.0,
+                "nadh": 1.0,
+                "pi": -1.0
+            },
+            "name": "Glyceraldehyde-3-phosphate dehydrogenase",
+            "steady_state_flux": -0.6393025
+        },
+        {
+            "_equilibrium_constant": 1990.4358553473612,
+            "_forward_rate_constant": 284033225.1196563,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PGK",
+            "metabolites": {
+                "_13dpg": -1.0,
+                "_3pg": 1.0,
+                "adp": -1.0,
+                "atp": 1.0
+            },
+            "name": "Phosphoglycerate kinase",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 0.1915627027752191,
+            "_forward_rate_constant": 1790.4306048769724,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PGM",
+            "metabolites": {
+                "_2pg": 1.0,
+                "_3pg": -1.0
+            },
+            "name": "Phosphoglycerate mutase",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 1.733253234390541,
+            "_forward_rate_constant": 9346.446771414967,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "ENO",
+            "metabolites": {
+                "_2pg": -1.0,
+                "h2o": 1.0,
+                "pep": 1.0
+            },
+            "name": "Enolase",
+            "steady_state_flux": -0.6393025
+        },
+        {
+            "_equilibrium_constant": 24.25919280378555,
+            "_forward_rate_constant": 111167.02473144015,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PEPCKm",
+            "metabolites": {
+                "co2": 1.0,
+                "gdp": 1.0,
+                "gtp": -1.0,
+                "oaa": -1.0,
+                "pep": 1.0
+            },
+            "name": "Phosphoenolpyruvate carboxykinase (GTP)",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 10333.2896179346,
+            "_forward_rate_constant": 100000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PYK",
+            "metabolites": {
+                "adp": -1.0,
+                "atp": 1.0,
+                "h": -1.0,
+                "pep": -1.0,
+                "pyr": 1.0
+            },
+            "name": "Pyruvate kinase",
+            "steady_state_flux": 0.0
+        },
+        {
+            "_equilibrium_constant": 26.659254851731617,
+            "_forward_rate_constant": 513888077.2474634,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "PCm",
+            "metabolites": {
+                "adp": 1.0,
+                "atp": -1.0,
+                "h": 1.0,
+                "hco3": -1.0,
+                "oaa": 1.0,
+                "pi": 1.0,
+                "pyr": -1.0
+            },
+            "name": "Pyruvate carboxylase",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 0.0004484996192033169,
+            "_forward_rate_constant": 112869.25628003491,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "LDH_L",
+            "metabolites": {
+                "h": 1.0,
+                "lac__L": -1.0,
+                "nad": -1.0,
+                "nadh": 1.0,
+                "pyr": 1.0
+            },
+            "name": "L-lactate dehydrogenase",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 9.999999999999996e-11,
+            "_forward_rate_constant": 3.063074759938794e-05,
+            "_lower_bound": -1000.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "ADK1",
+            "metabolites": {
+                "adp": 2.0,
+                "amp": -1.0,
+                "atp": -1.0
+            },
+            "name": "Adenylate kinase",
+            "steady_state_flux": -1.278605
+        },
+        {
+            "_equilibrium_constant": 1000000.0,
+            "_forward_rate_constant": 100000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "ATPM",
+            "metabolites": {
+                "adp": 1.0,
+                "atp": -1.0,
+                "h": 1.0,
+                "h2o": -1.0,
+                "pi": 1.0
+            },
+            "name": "ATP maintenance requirement",
+            "steady_state_flux": 0.0
+        },
+        {
+            "_equilibrium_constant": 1000000.0,
+            "_forward_rate_constant": 100000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "NADHM",
+            "metabolites": {
+                "h": 1,
+                "nad": 1,
+                "nadh": -1
+            },
+            "name": "",
+            "steady_state_flux": 0.0
+        },
+        {
+            "_equilibrium_constant": 33738.05532960206,
+            "_forward_rate_constant": 2314.491918738533,
+            "_lower_bound": 0,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "G6PP",
+            "metabolites": {
+                "g6p": -1,
+                "glc__D": 1,
+                "h2o": -1,
+                "pi": 1
+            },
+            "name": "",
+            "steady_state_flux": 0.31965125
+        },
+        {
+            "_equilibrium_constant": 2.718281828459045,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1,
+            "_reversible": true,
+            "_upper_bound": 10,
+            "gene_reaction_rule": "",
+            "id": "EX_glc__D",
+            "metabolites": {
+                "glc__D": -1
+            },
+            "name": "",
+            "steady_state_flux": 0.31965125
+        },
+        {
+            "_equilibrium_constant": 0.36787944117144233,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_h2o",
+            "metabolites": {
+                "h2o": -1
+            },
+            "name": "",
+            "steady_state_flux": -1.278605
+        },
+        {
+            "_equilibrium_constant": 2.718281828459045,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_h",
+            "metabolites": {
+                "h": -1
+            },
+            "name": "",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 2.718281828459045,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_pi",
+            "metabolites": {
+                "pi": -1
+            },
+            "name": "",
+            "steady_state_flux": 1.9179075
+        },
+        {
+            "_equilibrium_constant": 1.0,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_lac__L",
+            "metabolites": {
+                "lac__L": -1
+            },
+            "name": "",
+            "steady_state_flux": -0.6393025
+        },
+        {
+            "_equilibrium_constant": 4.131419377441725,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_co2",
+            "metabolites": {
+                "co2": -1
+            },
+            "name": "",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 1.0,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_hco3",
+            "metabolites": {
+                "hco3": -1
+            },
+            "name": "",
+            "steady_state_flux": -0.6393025
+        },
+        {
+            "_equilibrium_constant": 0.24204756492651788,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_gtp",
+            "metabolites": {
+                "gtp": -1
+            },
+            "name": "",
+            "steady_state_flux": -0.6393025
+        },
+        {
+            "_equilibrium_constant": 86.29801547677829,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": 0.0,
+            "_reversible": true,
+            "_upper_bound": 1,
+            "gene_reaction_rule": "",
+            "id": "EX_amp",
+            "metabolites": {
+                "amp": -1
+            },
+            "name": "",
+            "steady_state_flux": 1.278605
+        },
+        {
+            "_equilibrium_constant": 4.131419377441725,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_gdp",
+            "metabolites": {
+                "gdp": -1
+            },
+            "name": "",
+            "steady_state_flux": 0.6393025
+        },
+        {
+            "_equilibrium_constant": 1.0,
+            "_forward_rate_constant": 1000000.0,
+            "_lower_bound": -1000,
+            "_reversible": true,
+            "_upper_bound": 1000.0,
+            "gene_reaction_rule": "",
+            "id": "EX_adp",
+            "metabolites": {
+                "adp": -1
+            },
+            "name": "",
+            "steady_state_flux": -1.278605
+        }
+    ],
+    "units": [],
+    "version": "1"
+}
