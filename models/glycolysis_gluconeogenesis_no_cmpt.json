@@ -420,7 +420,7 @@
 "glc__D":-1
 },
 "lower_bound":-1,
-"upper_bound":10,
+"upper_bound":100,
 "gene_reaction_rule":""
 },
 {
@@ -458,6 +458,16 @@
 "name":"",
 "metabolites":{
 "lac__L":-1
+},
+"lower_bound":-1000,
+"upper_bound":1000.0,
+"gene_reaction_rule":""
+},
+{
+"id":"EX_pyr",
+"name":"",
+"metabolites":{
+"pyr":-1
 },
 "lower_bound":-1000,
 "upper_bound":1000.0,
