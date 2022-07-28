@@ -4,9 +4,9 @@ utp,UTP C9H11N2O15P3,-4,C9H11N2O15P3
 ppi,Diphosphate,-3,HO7P2
 udpg,UDPglucose,-2,C15H22N2O17P2
 udp,UDP C9H11N2O12P2,-3,C9H11N2O12P2
-glygn1,"Glycogen, structure 1 (glycogenin-11[1,4-Glc])",0,C66H111O56X
 ggn,"Primed glycogenin (glycogenin-8[1,4-Glc])",0,C48H81O41X
 glygn2,"Glycogen, structure 2 (glycogenin-1,6-{7[1,4-Glc], 4[1,4-Glc]})",0,C66H111O56X
+glygn1,"Glycogen, structure 1 (glycogenin-11[1,4-Glc])",0,C66H111O56X
 dxtrn,"Phosphorylase-limit dextrin (glycogenin-1,6{4[1,4-Glc], 4[1,4-Glc]})",0,C48H81O41X
 glygn3,"Glycogen, structure 3 (glycogenin-7[1,4-Glc])",0,C42H71O36X
 Tyr_ggn,Tyr-194 of apo-glycogenin protein (primer for glycogen synthesis),0,XOH
