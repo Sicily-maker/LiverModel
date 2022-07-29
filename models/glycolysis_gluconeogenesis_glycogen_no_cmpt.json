@@ -601,7 +601,7 @@
 "lower_bound":-0.585,
 "upper_bound":57,
 "gene_reaction_rule":"",
-"objective_coefficient":-1.0
+"objective_coefficient":1.0
 },
 {
 "id":"EX_h2o",
