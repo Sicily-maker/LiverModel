@@ -143,9 +143,7 @@ octa_prod_c,,,,
 glyc3p_1octa_c,,,,
 glyc3p_2octa_c,,,,
 glyc_2octa_c,,,,
-Rtotal3coa_c,Rtotal3coa c,-4,CO2R3C21H31N7O15P3S,c
-dag_hs_c,Diacylglycerol (homo sapiens),0,C3H6ORCO2R2CO2,c
-tag_hs_c,Triacylglycerol (homo sapiens),0,C3H5RCO2R2CO2R3CO2,c
+glyc_3octa_c,,,,
 malcoa_c,Malonyl CoA C24H33N7O19P3S,-5,C24H33N7O19P3S,c
 ACP_c,,,,
 malACP_c,,,,
@@ -180,4 +178,3 @@ btcoa_m,Butanoyl-CoA,-4,C25H38N7O17P3S,m
 b2coa_m,Crotonoyl-CoA,-4,C25H36N7O17P3S,m
 3hbcoa_m,(S)-3-Hydroxybutanoyl-CoA,-4,C25H38N7O18P3S,m
 octa_cons_c,,,,
-glyc_3octa_c,,,,
