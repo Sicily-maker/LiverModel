@@ -178,3 +178,7 @@ btcoa_m,Butanoyl-CoA,-4,C25H38N7O17P3S,m
 b2coa_m,Crotonoyl-CoA,-4,C25H36N7O17P3S,m
 3hbcoa_m,(S)-3-Hydroxybutanoyl-CoA,-4,C25H38N7O18P3S,m
 octa_cons_c,,,,
+gthox_c,Oxidized glutathione,-2,C20H30N6O12S2,c
+gthrd_c,Reduced glutathione,-1,C10H16N3O6S,c
+h2o2_c,Hydrogen peroxide,0,H2O2,c
+o2s_c,Superoxide anion,-1,O2,c
