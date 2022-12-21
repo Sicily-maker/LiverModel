@@ -1446,10 +1446,10 @@
             "gene_reaction_rule": "",
             "id": "PGK",
             "metabolites": {
-                "13dpg_c": 1.0,
-                "3pg_c": -1.0,
-                "adp_c": 1.0,
-                "atp_c": -1.0
+                "13dpg_c": -1.0,
+                "3pg_c": 1.0,
+                "adp_c": -1.0,
+                "atp_c": 1.0
             },
             "name": "Phosphoglycerate kinase"
         },
@@ -1460,8 +1460,8 @@
             "gene_reaction_rule": "",
             "id": "PGM",
             "metabolites": {
-                "2pg_c": -1.0,
-                "3pg_c": 1.0
+                "2pg_c": 1.0,
+                "3pg_c": -1.0
             },
             "name": "Phosphoglycerate mutase"
         },
