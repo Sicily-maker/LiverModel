@@ -1,0 +1,22 @@
+id,name,metabolites,lower_bound,upper_bound,gene_reaction_rule,subsystem,annotation
+HEX1,Hexokinase (D-glucose:ATP),"{'adp_c': 1, 'atp_c': -1, 'g6p_c': 1, 'glc__D_c': -1, 'h_c': 1}",-1000.0,1000.0,,Glycolysis,
+PGI,Glucose-6-phosphate isomerase,"{'f6p_c': 1, 'g6p_c': -1}",-1000.0,1000.0,,Glycolysis,
+PFK,Phosphofructokinase,"{'adp_c': 1, 'atp_c': -1, 'f6p_c': -1, 'fdp_c': 1, 'h_c': 1}",-1000.0,1000.0,,Glycolysis,
+FBA,Fructose-bisphosphate aldolase,"{'dhap_c': 1, 'fdp_c': -1, 'g3p_c': 1}",-1000.0,1000.0,,Glycolysis,
+TPI,Triose-phosphate isomerase,"{'dhap_c': -1, 'g3p_c': 1}",-1000.0,1000.0,,Glycolysis,
+GAPD,Glyceraldehyde-3-phosphate dehydrogenase,"{'_13dpg_c': 1, 'g3p_c': -1, 'h_c': 1, 'nad_c': -1, 'nadh_c': 1, 'pi_c': -1}",-1000.0,1000.0,,Glycolysis,
+PGK,Phosphoglycerate kinase,"{'_13dpg_c': -1, '_3pg_c': 1, 'adp_c': -1, 'atp_c': 1}",-1000.0,1000.0,,Glycolysis,
+PGM,Phosphoglycerate mutase,"{'_2pg_c': 1, '_3pg_c': -1}",-1000.0,1000.0,,Glycolysis,
+ENO,Enolase,"{'_2pg_c': -1, 'h2o_c': 1, 'pep_c': 1}",-1000.0,1000.0,,Glycolysis,
+PYK,Pyruvate kinase,"{'adp_c': -1, 'atp_c': 1, 'h_c': -1, 'pep_c': -1, 'pyr_c': 1}",-1000.0,1000.0,,Glycolysis,
+LDH_L,L-lactate dehydrogenase,"{'h_c': -1, 'lac__L_c': 1, 'nad_c': 1, 'nadh_c': -1, 'pyr_c': -1}",-1000.0,1000.0,,Glycolysis,
+DM_amp_c,AMP demand,{'amp_c': -1},0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000628')])"
+ADK1,Adenylate kinase,"{'adp_c': -2, 'amp_c': 1, 'atp_c': 1}",-1000.0,1000.0,,Misc.,
+SK_pyr_c,Pyruvate sink,{'pyr_c': -1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
+SK_lac__L_c,L-Lactate sink,{'lac__L_c': -1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
+ATPM,ATP maintenance requirement,"{'adp_c': 1, 'atp_c': -1, 'h2o_c': -1, 'h_c': 1, 'pi_c': 1}",-1000.0,1000.0,,Pseudoreaction,
+DM_nadh,Demand NADH,"{'h_c': 1, 'nad_c': 1, 'nadh_c': -1}",-1000.0,1000.0,,Pseudoreaction,
+SK_glc__D_c,D-Glucose sink,{'glc__D_c': 1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
+SK_amp_c,AMP sink,{'amp_c': 1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
+SK_h_c,H+ sink,{'h_c': -1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
+SK_h2o_c,H2O sink,{'h2o_c': -1},-1000.0,1000.0,,Pseudoreaction,"OrderedDict([('sbo', 'SBO:0000632')])"
